@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ---------------------------------------------------------- */
+/* RESET */
+/* ---------------------------------------------------------- */
 :root {
     box-sizing: initial;
 }
@@ -9,6 +14,14 @@
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
+
+/* ---------------------------------------------------------- */
+/* TYPOGRAPHY */
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+/* NAV HEADER*/
+/* ---------------------------------------------------------- */
 
 li,
 a,
@@ -48,6 +61,39 @@ header {
     color: purple;
 }
 
+/* ---------------------------------------------------------- */
+/* CONTAINERS AND SECTIONS */
+/* ---------------------------------------------------------- */
+.container {
+    width: 90%;
+    max-width: 960px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 30%;
+    border: 1px solid black;
+}
+
+/* ---------------------------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------------------------- */
+
+footer {
+    display: block;
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: auto;
+}
+
+/* ---------------------------------------------------------- */
+/* BUTTON */
+/* ---------------------------------------------------------- */
+
 button {
     background-color: black;
     color: white;
@@ -61,27 +107,103 @@ button:hover {
     background-color: purple;
 }
 
-.container {
-    max-width: 1080px;
-
-    min-height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+.btn {
 }
 
-footer {
-    display: block;
-    background-color: grey;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-top: auto;
+.btn-cta {
+}
+
+.btn-primary {
+}
+
+.btn-secondary {
+}
+
+/* ---------------------------------------------------------- */
+/* SECTION CONTENT */
+/* ---------------------------------------------------------- */
+
+.title {
+}
+
+.description {
 }
 
 /* ---------------------------------------------------------- */
 /* HERO */
 /* ---------------------------------------------------------- */
 
-.hero-container img {
+.hero {
+}
+
+.hero-text {
+}
+
+.hero-img {
+}
+
+.hero-img img {
+    max-width: 200px;
+}
+
+/* ---------------------------------------------------------- */
+/* NOTICE */
+/* ---------------------------------------------------------- */
+
+.notice {
+}
+
+/* ---------------------------------------------------------- */
+/* HIGHLIGHTS */
+/* ---------------------------------------------------------- */
+.highlights {
+}
+.hightlights-header {
+}
+.hightlights-cards {
+}
+.highlights-list {
+}
+.event-img img {
+    max-width: 200px;
+}
+/* ---------------------------------------------------------- */
+/* PROGRAMMES */
+/* ---------------------------------------------------------- */
+
+.programmes {
+}
+.programmes-header {
+}
+.programmes-list {
+}
+.programme-img img {
+    max-width: 200px;
+}
+
+/* ---------------------------------------------------------- */
+/* PARTICIPATE */
+/* ---------------------------------------------------------- */
+.participate {
+}
+.participate-header {
+}
+.participate-list {
+}
+.participate-img img {
+    max-width: 200px;
+}
+
+/* ---------------------------------------------------------- */
+/* SPONSORS */
+/* ---------------------------------------------------------- */
+
+.sponsors {
+}
+
+.sponsors-header {
+}
+
+.sponsors-logo {
     max-width: 200px;
 }
