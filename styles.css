@@ -132,16 +132,16 @@ header {
 
 .logo-title {
     color: var(--color-white);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     text-align: left;
 }
 
 .logo img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: var(--color-white);
-    padding: 0.5em;
+    padding: 0.1em;
     border-radius: 100%;
     margin-right: 10px;
 }
@@ -160,11 +160,11 @@ nav {
 
 .nav-list li {
     display: inline-block;
-    padding: 0.5em 0.5em;
+    padding: 0.5em 0.4em;
 }
 
 .nav-list a {
-    padding: 0.2em 0;
+    padding: 0.2em 0.5em;
     border-bottom: 1px solid var(--color-primary-1);
     transition: all 0.5s ease;
 }
@@ -173,17 +173,35 @@ nav {
     border-bottom: 2px solid var(--color-white);
 }
 
+.nav-list a:focus {
+    outline: none;
+    background-color: var(--color-primary-4);
+    border-radius: 0.3em;
+}
+
 .nav-cta {
     display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 970px) {
     header {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding: 30px 10%;
+        padding: 30px 7%;
         background-color: var(--color-primary-1);
+    }
+
+    .logo-title {
+        display: block;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+        padding: 0.2em;
     }
 
     nav {
@@ -195,7 +213,7 @@ nav {
     }
 
     .nav-list li {
-        padding: 0 1em;
+        padding: 0 0.4em;
     }
 }
 
@@ -204,7 +222,7 @@ nav {
 /* ---------------------------------------------------------- */
 
 .btn {
-    padding: 0.3em 1.3em;
+    padding: 0.3em 1em;
     border-radius: 0.3em;
     transition: all 0.3s ease 0s;
 }
@@ -223,7 +241,6 @@ nav {
 
 .btn-cta {
     display: inline-block;
-    font-size: 1rem;
 }
 
 .primary-dark {
