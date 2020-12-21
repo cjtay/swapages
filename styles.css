@@ -19,17 +19,45 @@
 /* TYPOGRAPHY */
 /* ---------------------------------------------------------- */
 
+body {
+    font-size: 1.125rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: inherit;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+li {
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* ---------------------------------------------------------- */
 /* NAV HEADER*/
 /* ---------------------------------------------------------- */
-
-li,
-a,
-button {
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
-}
 
 header {
     display: flex;
@@ -42,6 +70,9 @@ header {
     margin-right: auto;
     width: 50px;
     cursor: pointer;
+}
+
+nav {
 }
 
 .nav-links {
@@ -62,8 +93,37 @@ header {
 }
 
 /* ---------------------------------------------------------- */
+/* BUTTONS */
+/* ---------------------------------------------------------- */
+
+.btn {
+    background-color: darkgrey;
+    color: white;
+    padding: 0.3em 1.3em;
+    margin-left: 16px;
+    border-radius: 0.3em;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    background-color: grey;
+}
+
+.btn-large {
+    font-size: 1.3em;
+}
+
+.btn-small {
+    font-size: 0.7em;
+}
+
+.btn-cta {
+}
+
+/* ---------------------------------------------------------- */
 /* CONTAINERS AND SECTIONS */
 /* ---------------------------------------------------------- */
+
 .container {
     width: 90%;
     max-width: 960px;
@@ -74,7 +134,7 @@ header {
 }
 
 .card {
-    width: 30%;
+    width: 100%;
     border: 1px solid black;
 }
 
@@ -94,19 +154,6 @@ footer {
 /* BUTTON */
 /* ---------------------------------------------------------- */
 
-button {
-    background-color: black;
-    color: white;
-    padding: 5px 20px;
-    margin-left: 20px;
-    border-radius: 5px;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: purple;
-}
-
 .btn {
 }
 
@@ -124,9 +171,11 @@ button:hover {
 /* ---------------------------------------------------------- */
 
 .title {
+    margin: 0.5em 0;
 }
 
 .description {
+    margin: 0.5em 0;
 }
 
 /* ---------------------------------------------------------- */
@@ -143,7 +192,7 @@ button:hover {
 }
 
 .hero-img img {
-    max-width: 200px;
+    max-width: 100%;
 }
 
 /* ---------------------------------------------------------- */
@@ -165,7 +214,7 @@ button:hover {
 .highlights-list {
 }
 .event-img img {
-    max-width: 200px;
+    max-width: 100%;
 }
 /* ---------------------------------------------------------- */
 /* PROGRAMMES */
@@ -178,7 +227,7 @@ button:hover {
 .programmes-list {
 }
 .programme-img img {
-    max-width: 200px;
+    max-width: 100%;
 }
 
 /* ---------------------------------------------------------- */
@@ -191,7 +240,7 @@ button:hover {
 .participate-list {
 }
 .participate-img img {
-    max-width: 200px;
+    max-width: 100%;
 }
 
 /* ---------------------------------------------------------- */
@@ -205,5 +254,5 @@ button:hover {
 }
 
 .sponsors-logo {
-    max-width: 200px;
+    max-width: 100%;
 }
