@@ -1,0 +1,87 @@
+:root {
+    box-sizing: initial;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li,
+a,
+button {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    margin-right: auto;
+    width: 50px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: purple;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: purple;
+}
+
+.container {
+    max-width: 1080px;
+
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: block;
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: auto;
+}
+
+/* ---------------------------------------------------------- */
+/* HERO */
+/* ---------------------------------------------------------- */
+
+.hero-container img {
+    max-width: 200px;
+}
