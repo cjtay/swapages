@@ -7,6 +7,7 @@
     --color-white: white;
     --color-black: black;
     --color-darkgrey: grey;
+    --color-grey: grey;
     --color-font-dark: black;
     --color-font-light: white;
     --color-primary-1: #70308c;
@@ -47,7 +48,7 @@ desktop: 1200px;
 .bg-1 {
     position: absolute;
     top: 0px;
-    left: -190px;
+    left: -100px;
     z-index: -1;
     transform: rotate(-1deg);
     /* background-color: red; */
@@ -57,15 +58,45 @@ desktop: 1200px;
     width: 1100px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 300px) {
     .bg-1 {
-        top: -300px;
-        left: 180px;
+        /* border: 2px solid blue; */
+        top: -50px;
+        left: -200px;
         transform: rotate(-10deg);
     }
 
     .bg-1 img {
-        width: 1500px;
+        width: 1000px;
+        /* height: 100%; */
+    }
+}
+
+@media (min-width: 550px) {
+    .bg-1 {
+        /* border: 2px solid red; */
+        top: -200px;
+        left: -100px;
+        transform: rotate(-10deg);
+    }
+
+    .bg-1 img {
+        width: 1200px;
+        /* height: 100%; */
+    }
+}
+
+@media (min-width: 970px) {
+    .bg-1 {
+        /* border: 2px solid orange; */
+        top: -200px;
+        left: 150px;
+        transform: rotate(-10deg);
+    }
+
+    .bg-1 img {
+        width: 2400px;
+        height: 100vh;
         /* height: 100%; */
     }
 }
@@ -151,7 +182,7 @@ a {
 /* ---------------------------------------------------------- */
 
 header {
-    padding: 30px 10%;
+    padding: 2em 10% 0 10%;
 }
 
 .logo {
@@ -260,13 +291,16 @@ nav {
 /* ---------------------------------------------------------- */
 
 .btn {
-    padding: 0.3em 1em;
-    border-radius: 0.3em;
+    display: inline-block;
+    padding: 0.2em 1em;
+    border-radius: 0.2em;
     transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 
 .btn:hover {
-    background-color: grey;
+    background-color: var(--color-primary-4);
+    color: var(--color-white);
 }
 
 .btn-large {
@@ -295,6 +329,11 @@ nav {
 .btn-secondary {
 }
 
+.button-container {
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
 /* ---------------------------------------------------------- */
 /* FOOTER */
 /* ---------------------------------------------------------- */
@@ -313,6 +352,7 @@ footer {
 
 .title {
     margin: 0.2em 0;
+    color: var(--color-primary-1);
 }
 
 .description {
@@ -326,12 +366,16 @@ footer {
 .hero {
     border-radius: 10px;
     color: var(--color-font-light);
-    padding: 0.5em;
+    padding: 0.2em 1em;
     background-color: hsla(0, 0%, 0%, 0.1);
 }
 
 .hero-text {
     margin-bottom: 1em;
+}
+
+.hero-text .title {
+    color: var(--color-white);
 }
 
 .hero-img {
@@ -373,22 +417,63 @@ footer {
 /* ---------------------------------------------------------- */
 
 .notice {
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    margin-top: 0.5em;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    border: 1px solid var(--color-grey);
+}
+
+.notice .title {
+    text-align: center;
+}
+
+.notice .description {
+    font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+    .notice {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 2em;
+    }
 }
 
 /* ---------------------------------------------------------- */
 /* HIGHLIGHTS */
 /* ---------------------------------------------------------- */
-.highlights {
+.featured {
+    border: 1px solid red;
 }
-.hightlights-header {
+
+.featured-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
-.hightlights-cards {
+
+.featured-header .btn {
+    align-self: center;
 }
-.highlights-list {
+
+.featured-cards {
+    border: 1px solid green;
 }
+
 .event-img img {
     max-width: 100%;
 }
+
+@media (min-width: 900px) {
+    .featured-header {
+        max-width: 50%;
+    }
+    .featured-header .btn {
+        align-self: flex-start;
+    }
+}
+
 /* ---------------------------------------------------------- */
 /* PROGRAMMES */
 /* ---------------------------------------------------------- */
