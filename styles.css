@@ -41,10 +41,41 @@ desktop: 1200px;
 }
 
 /* ---------------------------------------------------------- */
+/* BACKGROUND PATTERNS*/
+/* ---------------------------------------------------------- */
+
+.bg-1 {
+    position: absolute;
+    top: -100px;
+    left: -180px;
+    z-index: -1;
+    transform: rotate(-1deg);
+    /* background-color: red; */
+}
+
+.bg-1 img {
+    width: 900px;
+}
+
+@media (min-width: 700px) {
+    .bg-1 {
+        top: -150px;
+        left: 150px;
+        transform: rotate(-10deg);
+    }
+
+    .bg-1 img {
+        width: 1200px;
+        /* height: 100%; */
+    }
+}
+
+/* ---------------------------------------------------------- */
 /* TYPOGRAPHY */
 /* ---------------------------------------------------------- */
 
 body {
+    position: relative;
     font-size: 1.125rem; /* 18px */
     font-weight: 300;
     color: var(--color-font-dark);
@@ -119,8 +150,9 @@ a {
 /* ---------------------------------------------------------- */
 
 header {
+    /* position: absolute; */
     padding: 30px 10%;
-    background-color: var(--color-primary-1);
+    /* background-color: var(--color-primary-1); */
 }
 
 .logo {
@@ -154,13 +186,13 @@ nav {
     text-align: center;
     list-style: none;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--color-white);
 }
 
 .nav-list li {
     display: inline-block;
-    padding: 0.5em 0.4em;
+    padding: 0.5em 0em;
 }
 
 .nav-list a {
@@ -189,11 +221,11 @@ nav {
         justify-content: flex-end;
         align-items: center;
         padding: 30px 7%;
-        background-color: var(--color-primary-1);
+        /* background-color: var(--color-primary-1); */
     }
 
     .logo-title {
-        display: block;
+        display: none;
         font-size: 0.9rem;
         text-transform: uppercase;
     }
@@ -210,6 +242,8 @@ nav {
 
     .nav-cta {
         display: block;
+        font-size: 0.8rem;
+        font-weight: 400;
     }
 
     .nav-list li {
@@ -286,9 +320,10 @@ footer {
 /* ---------------------------------------------------------- */
 
 .hero {
-    background-color: var(--color-primary-4);
+    background-color: hsla(0, 0%, 0%, 0.1);
+    border-radius: 5px;
     color: var(--color-font-light);
-    padding: 1em;
+    padding: 2em;
 }
 
 .hero-text {
