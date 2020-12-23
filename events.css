@@ -1,0 +1,88 @@
+/* --------------------------------------------- */
+/* EVENTS PAGE */
+/* --------------------------------------------- */
+
+.bg-event-1-container {
+    position: absolute;
+    z-index: -1;
+}
+.bg-event-1 {
+    position: absolute;
+
+    left: -500px;
+    top: 0px;
+}
+
+@media (min-width: 600px) {
+    .bg-event-1 {
+        left: -200px;
+        top: 0px;
+    }
+}
+@media (min-width: 970px) {
+    .bg-event-1 {
+        left: 0px;
+        top: -50px;
+    }
+}
+
+/* -------------- */
+.event-filter-header {
+    margin-top: 3em;
+}
+
+.event-filter-title {
+}
+.event-filter-description {
+}
+.event-filter-text {
+}
+.event-filter-line {
+}
+
+/* -------------- */
+.event-filter-container {
+}
+
+/* -------------- */
+.event-filter-search {
+}
+.event-filter-period {
+}
+
+.event-filter-programme {
+}
+
+.label {
+}
+.dropdown {
+}
+
+/* -------------- */
+.event-filter-list {
+}
+
+/* -------------- */
+.event-filter-card {
+}
+
+/* -------------- */
+.event-img {
+}
+
+/* -------------- */
+.event-info {
+}
+.event-title {
+}
+.event-description {
+}
+
+.event-author {
+}
+.author-photo {
+}
+.author-name {
+}
+.publish-date {
+}
