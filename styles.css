@@ -11,7 +11,7 @@
     --color-darkgrey: grey;
     --color-grey: grey;
     --color-lightgrey: rgba(226, 226, 226, 1);
-    --color-font-dark: black;
+    --color-font-dark: rgba(0, 0, 0, 0.6);
     --color-font-light: white;
     --color-primary-1: #70308c;
     --color-primary-2: #450a5e;
@@ -70,20 +70,20 @@ desktop: 1200px;
 
 @media (min-width: 600px) {
     .bg-1-container {
-        padding-bottom: 100%;
-        top: 100px;
+        padding-bottom: 120%;
+        top: 150px;
     }
 }
 @media (min-width: 900px) {
     .bg-1-container {
-        padding-bottom: 80%;
+        padding-bottom: 90%;
         left: -50px;
         top: 110px;
     }
 }
 @media (min-width: 1200px) {
     .bg-1-container {
-        padding-bottom: 60%;
+        padding-bottom: 65%;
         left: -250px;
         top: 120px;
     }
@@ -200,16 +200,19 @@ a {
     flex-direction: column;
 }
 
-.section {
+section {
     margin-bottom: 1em;
+    /* max-width: 500px; */
 }
-.section:first-child {
+section:first-child {
     margin-top: 2em;
 }
 
 .card {
-    width: 100%;
-    border: 1px solid black;
+    padding: 0.5em;
+    border-radius: 1em;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1.5em;
 }
 
 /* ---------------------------------------------------------- */
@@ -217,7 +220,7 @@ a {
 /* ---------------------------------------------------------- */
 
 header {
-    padding: 2em 10% 0 10%;
+    padding: 1em 5% 1em 5%;
 }
 
 .logo {
@@ -285,7 +288,7 @@ nav {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding: 30px 7%;
+        padding: 15px 15%;
         /* background-color: var(--color-primary-1); */
     }
 
@@ -453,6 +456,7 @@ footer .legal {
         align-items: center;
         max-height: 70vh;
         overflow: hidden;
+        background-color: transparent;
     }
     .hero-img {
         width: 50%;

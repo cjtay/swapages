@@ -1,0 +1,65 @@
+/* -------------------------------------- */
+/* EVENT POST PAGE */
+/* -------------------------------------- */
+
+header {
+    background: rgba(112, 49, 140, 1);
+    background: -webkit-linear-gradient(
+        bottom right,
+        rgba(112, 49, 140, 1),
+        rgba(132, 137, 199, 1)
+    );
+    background: -moz-linear-gradient(
+        bottom right,
+        rgba(112, 49, 140, 1),
+        rgba(132, 137, 199, 1)
+    );
+    background: linear-gradient(
+        to top left,
+        rgba(112, 49, 140, 1),
+        rgba(132, 137, 199, 1)
+    );
+}
+
+.post-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.post-container p {
+    margin-bottom: 1em;
+}
+
+.post-info {
+    font-size: 0.9rem;
+}
+
+.post-info span {
+    font-weight: 700;
+}
+
+.post-title {
+    font-weight: 900;
+    color: var(--color-primary-2);
+}
+
+.paragraph {
+    color: var(--color-black);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.post-img {
+    width: 100%;
+    /* max-height: 180px; */
+    overflow: hidden;
+    margin: 1em 0;
+}
+
+.post-img img {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
