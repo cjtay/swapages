@@ -137,7 +137,6 @@ desktop: 1200px;
 /* ---------------------------------------------------------- */
 
 body {
-    position: relative;
     font-size: 1.125rem; /* 18px */
     line-height: 1.4;
     font-weight: 300;
@@ -192,6 +191,10 @@ a {
 /* ---------------------------------------------------------- */
 /* CONTAINERS AND SECTIONS */
 /* ---------------------------------------------------------- */
+
+.wrapper {
+    position: relative;
+}
 
 .container {
     width: 90%;
