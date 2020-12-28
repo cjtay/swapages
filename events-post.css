@@ -2,7 +2,7 @@
 /* EVENT POST PAGE */
 /* -------------------------------------- */
 
-header {
+.accent {
     background: rgba(112, 49, 140, 1);
     background: -webkit-linear-gradient(
         bottom right,
@@ -47,6 +47,10 @@ header {
     font-weight: 900;
     color: var(--color-primary-2);
 }
+.post-section-title {
+    font-weight: 700;
+    color: var(--color-primary-2);
+}
 
 .paragraph {
     color: var(--color-black);
@@ -68,6 +72,13 @@ header {
     margin-right: auto;
 }
 
+.img-caption {
+    color: var(--color-grey);
+    font-size: 0.9rem;
+    font-weight: 300;
+    /* text-align: center; */
+}
+
 @media (min-width: 600px) {
     .left {
         width: 200px;
@@ -76,22 +87,25 @@ header {
         margin-right: 1em;
         margin-top: 0;
         margin-bottom: 1em;
-        padding: 0.5em;
+        /* padding: 0.5em; */
         box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.25);
     }
     .right {
-        width: 200px;
+        width: 250px;
         overflow: hidden;
         float: right;
         margin-left: 1em;
         margin-top: 0;
-        padding: 0.5em;
+        margin-bottom: 1em;
+        /* padding: 0.5em; */
         box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.25);
     }
 }
 
 .main-img {
-    margin-top: -1em;
+    object-fit: cover;
+    width: 100%;
+    height: 20vh;
 }
 
 .highlight {
@@ -162,5 +176,9 @@ header {
 
     .bullet li {
         margin: 0 0 1em 0;
+    }
+
+    .main-img {
+        height: 30vh;
     }
 }
